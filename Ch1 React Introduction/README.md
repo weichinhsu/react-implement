@@ -16,3 +16,62 @@ ReactJS是一個以JavaScript為底的函式庫，可以輕鬆的建立互動式
 NPM（Node Package Manager）是由Node.js預設，並以JavaScript編寫的軟體套件管理系統，它簡化了在專案中套件安裝、升級和解除安裝等麻煩過程，而在React生態圈中，它除了可以用來建構專案，同時也可以在專案中，安裝各式不同的套件。
 
 而NPX則是NPM v5.2.0版本後新增的指令，它可以讓使用者避免全局安裝任何東西，其他NPM與Node.js使用方式會在之後使用到時與讀者說明。
+
+## JSX語法
+在React中使用JSX語法來撰寫，而JSX並不是一個新的語言，它是一個語法糖（Syntatic Sugar），相較於HTML語法，JSX更接近XML語法，它可以自訂標籤，讓程式看起來更直觀，如下：
+
+**HTML語法**
+``` javascript
+<div id="Content">
+	<p>Hello</p>
+</div>
+```
+**JSX語法**
+``` javascript
+function Content(props) {
+  return 
+    <div id="Content">
+	    <p>Hello</p>
+    </div>
+}
+```
+上述程式碼可以看到，在JSX語法中，自訂了一個Content標籤，相較於HTML語法3行的Content更簡潔，倘若須要重複Content，在JSX中只要再次呼叫Content標籤即可，但在HTML中卻要重複3行程式碼，因此JSX也讓程式減少許多重複的語法，而Content也是React中Component元件的概念，其定義方式將會在後面章節介紹。
+
+除此之外，JSX採用了聲明式（declarative）的撰寫風格，簡單來說就是讓程式邏輯和原件可以搭配使用，如下：
+``` javascript
+const Message = () => {
+	return <p>Hello</p>
+}
+const Content = () => {
+    return 
+        <div id="Content">
+	        Message()
+        </div>
+}
+```
+上述程式碼可以看到宣告一個方法Message，並且回傳文字，表示當須要用到此元件時，呼叫Message方法即可。
+
+接著來看採用命令式（Imperative）撰寫風格的傳統HTML，以及JavaScript，便只能分開撰寫，如下：
+
+**HTML檔**
+``` javascript
+<div id="Content">
+</div>
+``` 
+**JavaScript檔**
+``` javascript
+const node = document.createElement("p");
+const textnode = document.createTextNode("Hello");
+node.appendChild(textnode); 
+document.getElementById("Content").appendChild(node);
+```
+由上述程式碼，可以明顯地感受到JSX語法讓程式語言更簡潔，可讀性十分的高，因此在開發程式時，便可以方便開發人員更加的快速撰寫。
+
+## JavaScript ES6+
+在React生態系中，是使用JavaScript ES6（ECMAScript 6）以上的版本為主要開發的語言，因此若讀者只有ES5的基礎，對於開發React相關的專案來說，可能時常會看到一些較過去不同的語法，所以本書也建議讀者在學習React Native之前，可以了解JavaScript ES6版本以上的語法，往後在開發React Native也會較易上手。
+
+## Flux/Redux/Dva概念
+Flux是一個由Fackbook提出的單向資料流概念，而Redux則是實作出Flux的概念，透過Redux框架，在程式中便可以更輕鬆的管理狀態（state），最後Dva是改善了Redux的缺點後所發展出來的架構，本教學也會以Dva為主要使用架構。
+
+## React Native
+一般說到React，一定也會聽過React Native，它是React在2015年推出的行動端（Mobile）框架，它可以讓開發者透過React和JavaScript撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
