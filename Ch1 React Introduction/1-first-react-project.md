@@ -50,3 +50,33 @@ npm start
 
 * **package-lock.json** <br>
   package-lock.json 是在npm5 之後才推出的， 當node_modules 或package.json 發生變動時會自動生成文件，並檢驗版本是否吻合，且每次npm install 或update 時都會進行更新。
+
+## 補充筆記 package.json
+package.json 檔案是以 JSON 格式來存放專案的一些資訊，包含專案描述、自訂指令或安裝套件紀錄等，而本小節將會針對安裝套件紀錄詳細說明，也就是檔案中的 dependencies 區塊。
+dependencies 區塊為記錄此專案依賴的套件，也就是此專案中所安裝的套件模組，主要是紀錄套件名稱及安裝的版本，如下所示：
+```
+"dependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5"
+}
+```
+這邊值得注意的是，若讀者是從網路上取得他人分享的 React 的專案時，通常都不會有 node_modules 資料夾，因為 node_modules 下都是存放依賴套件的內容，會讓整個專案的大小變得十分龐大，為了避免這樣的問題，我們會先將 node_modules 刪除，再傳送至網路上或給其他人。
+
+因此當取得他人的專案時，必須先在專案目錄下執行安裝套件指令，如下，此時 npm 會搜尋 package.json 中記錄在 dependencies 的套件，並判斷套件名稱及版本才會安裝到此資料夾下。
+```
+npm install
+```
+當要解除安裝套件時，可以透過 npm uninstall 加上要刪除的套件名來刪除，如下所示：
+```
+npm uninstall react
+```
+指令說明
+執行上述指令後，便會將 react 套件解除安裝，同時也會將套件名稱從 dependencies 中移除。
+若未來讀者要安裝其它套件時，也可以透過 npm install 來安裝，並在指令後方加上「--save」參數，這邊以安裝 react 套件為例，如下所示：
+```
+npm install --save react
+```
+指令說明
+上述指令除了會安裝 react 套件之外，也會將 react 套件名稱與版本新增到 dependencies 中，但若沒有加上「--save」參數，則此套件的名稱可能不會出現在 dependencies 中，而此用意，除了讓開發者可以方便的管理專案套件之外，也可以讓安裝在自己電腦的專案，移動到其他電腦時，只需要在專案根目錄下執行 npm install，就會自動安裝 package.json 清單中相關的套件，避免有些套件沒有安裝到，而造成運行錯誤。
+
+上述範例主要目的是讓讀者了解，如何安裝以及解除安裝套件，因此若讀者有接續著專案進行練習的話，要記得將 react 套件安裝回來唷！
