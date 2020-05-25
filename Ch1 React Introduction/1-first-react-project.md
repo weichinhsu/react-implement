@@ -3,7 +3,12 @@
 本章節開始教導讀者如何建立一個 React 專案，以及如何在瀏覽器上運行專案。
 
 ## 1. 建立專案
-首先開啟終端機
+首先開啟命令提示字元（又稱為 Command Line，通常簡稱為 cmd）來建立專案及運行，因此請讀者搜尋 
+Windows 中的「cmd」來開啟命令提示字元。
+![command-line](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/command-line.PNG?raw=true)
+
+> MacOS的稱為終端機
+
 **1. 使用 npx 指令建立第一個 React 專案**
 ```
 cd Desktop
