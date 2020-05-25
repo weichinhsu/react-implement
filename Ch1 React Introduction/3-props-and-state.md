@@ -155,10 +155,11 @@ class App extends React.Component {
 export default App;
 ``` 
 **程式碼說明** <br>
-在 changeTxext 方法中，使用 setState()，改變 saySomething 的值，並將新的狀態設定為 How are you。這邊值得注意的是，setState()可以個別更改狀態，因此修改了 saySomething，myState 並不會受到影響。
+1. 在 changeTxext 方法中，使用 setState()，改變 saySomething 的值，並將新的狀態設定為 How are you。這邊值得注意的是，setState()可以個別更改狀態，因此修改了 saySomething，myState 並不會受到影響。
+2. 在render方法中，建立 button 按鈕元素，並設定 onClcik 屬性綁定 changeText() 方法，表示當按下按鈕後，會觸發並執行 changeText() 中的 setState()，來改變 saySomething 的值。
 
 ---
-#### 補充筆記：箭頭函式
+#### 補充筆記：箭頭函式 (Arrow Function)
 > 簡單來說，就是函式的簡短寫法
 
 箭頭函式(Arrow Functions) 是在ES6 中十分常見的語法，**它可以簡短 function 程式的行數，提升整體程式的可讀性，同時也可以綁定 this 值**。
@@ -175,9 +176,10 @@ class App extends React.Component {
       myState: 'My first state',
       saySomething: 'Hello World'
     }
-    this.changeTxext = this.changeTxext.bind(this);
+    this.changeTxext = this.changeTxext.bind(this); // 綁定 this
   }
 
+  //不使用箭頭函式
   changeTxext() {
     this.setState({ saySomething: 'How are you?' })
   }
@@ -192,3 +194,26 @@ class App extends React.Component {
     );
   }
 }
+```
+---
+#### 更簡單的寫法
+如果只有要更新 state，可以直接在 onClick 中加入箭頭函式，並 setState 即可。
+``` javascript
+class App extends React.Component {
+  state = {
+    myState: 'My first state',
+    saySomething: 'Hello World'
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <p>{this.state.myState}</p>
+        <p>{this.state.saySomething}</p>
+        <button onClick={() => this.setState({ saySomething: 'How are you?' })}>Click</button>
+      </div>
+    );
+  }
+}
+```
