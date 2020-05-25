@@ -3,6 +3,10 @@
 
 首先，在下圖可以看到，React 提供許多不同的生命週期函式，且每個函式都有不同的用途，讓開發者可以依照需求，呼叫適合的方法，下面會一一跟讀者詳細介紹生命週期函式的用法。
 
+![lifecycle](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/lifecycle.PNG?raw=true)
+
+[Reference : react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
 一般而言，生命週期主要分為Mounting、Updating及Unmounting，分別為頁面載入、頁面組件更新以及離開頁面，三種不同的狀態，而在這些狀態下，都會有不同的函式和使用方法，如下所示：
 1.	Mounting：組件渲染階段，在這個階段完成了組件的載入和初始化。
 2.	Updating：組件運行和改變階段，這個階段組件可以處理屬性(props)和狀態(state)改變，並重新渲染頁面組件。
