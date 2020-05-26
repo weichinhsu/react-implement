@@ -7,7 +7,7 @@
 Windows 中的「cmd」來開啟命令提示字元。
 ![command-line](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/command-line.PNG?raw=true)
 
-> MacOS的稱為終端機
+> MacOS 環境的稱為終端機 (Terminal) 。
 
 **1. 使用 npx 指令建立第一個 React 專案**
 ```
