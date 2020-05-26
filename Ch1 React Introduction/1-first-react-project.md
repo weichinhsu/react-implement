@@ -192,13 +192,13 @@ jsonFile.json
 ```
 ---
 
-### 補充筆記 package.json
+## 5. 補充筆記 package.json
 package.json 檔案是以 JSON 格式來存放專案的一些資訊，包含專案描述、自訂指令或安裝套件紀錄等，而本小節將會針對安裝套件紀錄詳細說明，也就是檔案中的 dependencies 區塊。
 dependencies 區塊為記錄此專案依賴的套件，也就是此專案中所安裝的套件模組，主要是紀錄套件名稱及安裝的版本，如下所示：
 ```
 "dependencies": {
-    "react": "16.9.0",
-    "react-native": "0.61.5"
+  "react": "^16.13.1",
+  "react-dom": "^16.13.1",
 }
 ```
 這邊值得注意的是，若讀者是從網路上取得他人分享的 React 的專案時，通常都不會有 node_modules 資料夾，因為 node_modules 下都是存放依賴套件的內容，會讓整個專案的大小變得十分龐大，為了避免這樣的問題，我們會先將 node_modules 刪除，再傳送至網路上或給其他人。
