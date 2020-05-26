@@ -27,7 +27,7 @@ class Hello extends Component{
 export default class App extends Component{
   render(){
     return(
-      <div style={styles.container}>
+      <div>
         <Hello title="World!"/>        
         <Hello title="React!"/>
       </div>
@@ -45,7 +45,7 @@ export default class App extends Component{
 class Hello extends Component{
   render(){
     return(
-      <div style={styles.container}>
+      <div>
         <p>title: {this.props.title}</p>
         <p>name: {this.props.name}</p>
         <p>id: {this.props.id}</p>
