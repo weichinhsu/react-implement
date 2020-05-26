@@ -23,7 +23,7 @@ NPM（Node Package Manager）是由Node.js預設，並以JavaScript編寫的軟�
 **HTML語法**
 ``` javascript
 <div id="Content">
-	<p>Hello</p>
+  <p>Hello</p>
 </div>
 ```
 **JSX語法**
@@ -31,7 +31,7 @@ NPM（Node Package Manager）是由Node.js預設，並以JavaScript編寫的軟�
 function Content(props) {
   return 
     <div id="Content">
-	    <p>Hello</p>
+      <p>Hello</p>
     </div>
 }
 ```
@@ -43,10 +43,10 @@ const Message = () => {
 	return <p>Hello</p>
 }
 const Content = () => {
-    return 
-        <div id="Content">
-	        Message()
-        </div>
+  return 
+    <div id="Content">
+      { Message() }
+    </div>
 }
 ```
 上述程式碼可以看到宣告一個方法Message，並且回傳文字，表示當須要用到此元件時，呼叫Message方法即可。
@@ -68,10 +68,19 @@ document.getElementById("Content").appendChild(node);
 由上述程式碼，可以明顯地感受到JSX語法讓程式語言更簡潔，可讀性十分的高，因此在開發程式時，便可以方便開發人員更加的快速撰寫。
 
 ## JavaScript ES6+
-在React生態系中，是使用JavaScript ES6（ECMAScript 6）以上的版本為主要開發的語言，因此若讀者只有ES5的基礎，對於開發React相關的專案來說，可能時常會看到一些較過去不同的語法，所以本書也建議讀者在學習React Native之前，可以了解JavaScript ES6版本以上的語法，往後在開發React Native也會較易上手。
+在 React 生態系中，是使用 JavaScript ES6（ECMAScript 6）以上的版本為主要開發的語言，因此若讀者只有 ES5 的基礎，對於開發 React 相關的專案來說，可能時常會看到一些較過去不同的語法，所以本書也建議讀者在學習 React 之前，可以了解 JavaScript ES6 版本以上的語法，往後在開發 React 也會較易上手。
 
 ## Flux/Redux/Dva概念
-Flux是一個由Fackbook提出的單向資料流概念，而Redux則是實作出Flux的概念，透過Redux框架，在程式中便可以更輕鬆的管理狀態（state），最後Dva是改善了Redux的缺點後所發展出來的架構，本教學也會以Dva為主要使用架構。
+Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實作出 Flux 的概念，透過 Redux 框架，在程式中便可以更輕鬆的管理狀態（state），最後 Dva 是改善了 Redux 的缺點後所發展出來的架構，本教學也會以 Dva 為主要使用架構。
 
 ## React Native
-一般說到React，一定也會聽過React Native，它是React在2015年推出的行動端（Mobile）框架，它可以讓開發者透過React和JavaScript撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
+一般說到 React，一定也會聽過 React Native，它是 React 在 2015 年推出的行動端（Mobile）框架，它可以讓開發者透過 React 和 JavaScript 撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
+
+---
+
+繼續閱讀
+
+* [我的第一個 React 專案](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/1-first-react-project.md#%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%80%8B-react-%E5%B0%88%E6%A1%88)
+* [Component 元件](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/2-component.md#react-%E5%9F%BA%E7%A4%8E--component-%E5%85%83%E4%BB%B6)
+* [State v.s. Props](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/3-props-and-state.md#react-%E5%9F%BA%E7%A4%8E--props-%E8%88%87-state) 
+* [生命週期](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/4-lifecycle.md#react-%E5%9F%BA%E7%A4%8E--%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F)

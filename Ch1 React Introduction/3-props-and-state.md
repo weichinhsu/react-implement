@@ -25,7 +25,7 @@ export default class App extends Component{
     return(
       <div style={styles.container}>
         <Hello title="World!"/>        
-        <Hello title="React Native!"/>
+        <Hello title="React!"/>
       </div>
     )
   }
