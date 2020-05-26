@@ -45,11 +45,11 @@ export default class App extends Component{
 class Hello extends Component{
   render(){
     return(
-      <View style={styles.container}>
-        <Text>title: {this.props.title}</Text>
-        <Text>name: {this.props.name}</Text>
-        <Text>id: {this.props.id}</Text>
-      </View>
+      <div style={styles.container}>
+        <p>title: {this.props.title}</p>
+        <p>name: {this.props.name}</p>
+        <p>id: {this.props.id}</p>
+      </div>
     );
   }
 }
