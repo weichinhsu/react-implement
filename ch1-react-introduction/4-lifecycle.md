@@ -33,8 +33,8 @@ constructor(props){
 }
 ```
 
-**程式碼說明**   
- 1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 2. 方式 2 實作 constructor 時，必須呼叫 super\(props\)，否則用到 this.props 時，會發生 undefined 的錯誤。 3. 請注意，不可以在 constructor 中呼叫 setState\(\) 方法，並且當頁面上不會使用到 state 以及 props 時，可以不用實作 constructor。
+**程式碼說明**  
+1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 2. 方式 2 實作 constructor 時，必須呼叫 super\(props\)，否則用到 this.props 時，會發生 undefined 的錯誤。 3. 請注意，不可以在 constructor 中呼叫 setState\(\) 方法，並且當頁面上不會使用到 state 以及 props 時，可以不用實作 constructor。
 
 super\(props\) 超詳細解說推薦：[為什麼我們要寫 super\(props\) ？](https://overreacted.io/zh-hant/why-do-we-write-super-props/)
 
@@ -92,8 +92,8 @@ static getDerivedStateFromProps(nextProps, prevState) {
 }
 ```
 
-**程式碼說明**   
- 1. 第2-6行程式碼，把新的props\(nextProps.title\)和舊的state\(prevState.title\)做比較。 2. 第3-5行程式碼，當nextProps和prevState不相同時，回傳新的title state。 3. 第7行程式碼，當nextProps和prevState無差異時，回傳null不更新state。
+**程式碼說明**  
+1. 第2-6行程式碼，把新的props\(nextProps.title\)和舊的state\(prevState.title\)做比較。 2. 第3-5行程式碼，當nextProps和prevState不相同時，回傳新的title state。 3. 第7行程式碼，當nextProps和prevState無差異時，回傳null不更新state。
 
 ### shouldComponentUpdate\(nextProps, nextState\)
 

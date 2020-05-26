@@ -4,7 +4,7 @@
 
 ## 1. 建立專案
 
-首先開啟命令提示字元（又稱為 Command Line，通常簡稱為 cmd）來建立專案及運行，因此請讀者搜尋 Windows 中的「cmd」來開啟命令提示字元。 
+首先開啟命令提示字元（又稱為 Command Line，通常簡稱為 cmd）來建立專案及運行，因此請讀者搜尋 Windows 中的「cmd」來開啟命令提示字元。
 
 ![command-line](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/command-line.PNG?raw=true)
 
@@ -17,8 +17,8 @@ cd Desktop
 npx create-react-app my-first-project
 ```
 
-**指令說明**   
- 1. 在桌面建立專案，因此透過 cd 指令進入桌面路徑。 2. 上透過 npx 去執行 create-react-app 指令，來建立 React 專案，並命名為 my-first-project 。
+**指令說明**  
+1. 在桌面建立專案，因此透過 cd 指令進入桌面路徑。 2. 上透過 npx 去執行 create-react-app 指令，來建立 React 專案，並命名為 my-first-project 。
 
 **2. 進入專案**
 
@@ -26,8 +26,8 @@ npx create-react-app my-first-project
 cd my-first-project
 ```
 
-**指令說明**   
- 透過 cd 指令進入專案中。
+**指令說明**  
+透過 cd 指令進入專案中。
 
 ### 補充筆記：cmd 常用指令 cd
 
@@ -150,8 +150,8 @@ export default Ａ
 
 在 JavaScript 中可以透過 import 語法來引入程式模組，並且會搭配 export 或 default export 使用， 在 React 中import是很常見的引入方式，因此這邊介紹幾個 import 重點，如下：
 
-**第一種方式**   
- 由大括號的方式引入的模組，表示 test01 元件中有 export 三個模組，注意引入的名稱必 須跟 test01 元件中 export 的名稱相同。
+**第一種方式**  
+由大括號的方式引入的模組，表示 test01 元件中有 export 三個模組，注意引入的名稱必 須跟 test01 元件中 export 的名稱相同。
 
 ```javascript
 import {A, B, C} from 'test01';
@@ -165,8 +165,8 @@ export function B(){ }
 export function C(){ }
 ```
 
-**第二種方式**   
- 直接引入模組，表示 test02 元件中有 default export 的模組，使用此方式 import 的名稱不需跟 test02 元件中 export 的名稱相同。
+**第二種方式**  
+直接引入模組，表示 test02 元件中有 default export 的模組，使用此方式 import 的名稱不需跟 test02 元件中 export 的名稱相同。
 
 ```javascript
 import Apple from 'test02';
@@ -178,15 +178,15 @@ test02.js
 export default function A(){ }
 ```
 
-**as 命名**   
- 透過 as 可以為引入的模組取名，如下，將A模組重新命名為 MyApp，注意命名只適用在第一種引入方式，不適用在第二種。
+**as 命名**  
+透過 as 可以為引入的模組取名，如下，將A模組重新命名為 MyApp，注意命名只適用在第一種引入方式，不適用在第二種。
 
 ```javascript
 import {A as MyApp, B, C} from 'test01';
 ```
 
-**json 引入**   
- 如果引入的檔案是json檔，此json檔就不需要export或default export，import可直接引入即可。
+**json 引入**  
+如果引入的檔案是json檔，此json檔就不需要export或default export，import可直接引入即可。
 
 ```javascript
 import data from 'jsonFile';
