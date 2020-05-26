@@ -1,4 +1,4 @@
-# 1-4 React 基礎 : 生命週期
+# 1-4 生命週期
 
 > 本章節會沿用上一個章節建立的 my-first-project 專案。
 
@@ -6,7 +6,7 @@
 
 首先，在下圖可以看到，React 提供許多不同的生命週期函式，且每個函式都有不同的用途，讓開發者可以依照需求，呼叫適合的方法，下面會一一跟讀者詳細介紹生命週期函式的用法。
 
-![lifecycle](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/lifecycle.PNG?raw=true)
+![lifecycle](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/lifecycle.PNG?raw=true)
 
 [Reference : react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 

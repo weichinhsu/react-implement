@@ -1,4 +1,4 @@
-# 1-3 React 基礎 : props 與 state
+# 1-3 props 與 state
 
 > 本章節會沿用上一個章節建立的 my-first-project 專案。
 

@@ -4,7 +4,9 @@
 
 ## 1. 建立專案
 
-首先開啟命令提示字元（又稱為 Command Line，通常簡稱為 cmd）來建立專案及運行，因此請讀者搜尋 Windows 中的「cmd」來開啟命令提示字元。 ![command-line](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/command-line.PNG?raw=true)
+首先開啟命令提示字元（又稱為 Command Line，通常簡稱為 cmd）來建立專案及運行，因此請讀者搜尋 Windows 中的「cmd」來開啟命令提示字元。 
+
+![command-line](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/command-line.PNG?raw=true)
 
 > MacOS 環境的稱為終端機 \(Terminal\) 。 首先開啟終端機
 

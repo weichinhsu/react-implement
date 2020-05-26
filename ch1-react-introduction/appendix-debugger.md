@@ -4,9 +4,9 @@
 
 因此只要在程式中，有下 `console.log()`，便會在這邊看到。
 
-![debug](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/debug-1.png?raw=true)
+![debug](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/debug-1.png?raw=true)
 
 除此之外，還能夠在「Sources」分頁，在左方目錄下找到要除錯的檔案，並且加上中斷點，當Reload專案或重新整理網頁時，可以即時查看結果，最後透過右方的按鈕繼續跳往下個中斷點或結束除錯。
 
-![debug](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/debug-2.png?raw=true)
+![debug](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/debug-2.png?raw=true)
 
