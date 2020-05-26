@@ -4,6 +4,7 @@
 
 ## 1. 建立專案
 首先開啟終端機
+
 **1. 使用 npx 指令建立第一個 React 專案**
 ```
 cd Desktop
@@ -21,7 +22,7 @@ cd my-first-project
 透過 cd 指令進入專案中。
 
 ---
-補充筆記：cmd 常用指令 cd
+### 補充筆記：cmd 常用指令 cd
 在開發時， 時常會用到 windows 中的命令提示字元（cmd），因此讀者若熟悉一些常用的指令，便可以提升學習速度。
 
 由於命令提示字元視窗預設的路徑為使用者名稱資料夾，如下所示：
@@ -120,7 +121,7 @@ export default App;
 2. export default 將 APP 元件輸出。
 
 ---
-## 補充筆記 export / export default
+### 補充筆記 export / export default
 在 JavaScript 中可以透過 export 語法來**匯出**程式模組（Module），讓其他的檔案可以讀取此模組，因此這邊介紹幾個 export 重點，如下：
 
 一個檔案可以 export 很多個模組
@@ -143,7 +144,7 @@ export default Ａ
 ```
 
 ---
-## 補充筆記 import 
+### 補充筆記 import 
 
 在 JavaScript 中可以透過 import 語法來引入程式模組，並且會搭配 export 或 default export 使用， 在 React 中import是很常見的引入方式，因此這邊介紹幾個 import 重點，如下：
 
@@ -191,7 +192,7 @@ jsonFile.json
 ```
 ---
 
-## 補充筆記 package.json
+### 補充筆記 package.json
 package.json 檔案是以 JSON 格式來存放專案的一些資訊，包含專案描述、自訂指令或安裝套件紀錄等，而本小節將會針對安裝套件紀錄詳細說明，也就是檔案中的 dependencies 區塊。
 dependencies 區塊為記錄此專案依賴的套件，也就是此專案中所安裝的套件模組，主要是紀錄套件名稱及安裝的版本，如下所示：
 ```

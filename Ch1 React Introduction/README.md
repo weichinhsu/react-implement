@@ -23,7 +23,7 @@ NPM（Node Package Manager）是由Node.js預設，並以JavaScript編寫的軟�
 **HTML語法**
 ``` javascript
 <div id="Content">
-	<p>Hello</p>
+  <p>Hello</p>
 </div>
 ```
 **JSX語法**
@@ -75,3 +75,12 @@ Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實�
 
 ## React Native
 一般說到 React，一定也會聽過 React Native，它是 React 在 2015 年推出的行動端（Mobile）框架，它可以讓開發者透過 React 和 JavaScript 撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
+
+---
+
+繼續閱讀
+
+* [我的第一個 React 專案](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/1-first-react-project.md#%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%80%8B-react-%E5%B0%88%E6%A1%88)
+* [Component 元件](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/2-component.md#react-%E5%9F%BA%E7%A4%8E--component-%E5%85%83%E4%BB%B6)
+* [State v.s. Props](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/3-props-and-state.md#react-%E5%9F%BA%E7%A4%8E--props-%E8%88%87-state) 
+* [生命週期](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/4-lifecycle.md#react-%E5%9F%BA%E7%A4%8E--%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F)
