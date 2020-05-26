@@ -1,7 +1,6 @@
-# 安裝 Node.js
+# 補充：安裝 Node.js
 
-首先， 進入Node.js 的 [官方網站](https://nodejs.org/)， 這邊我們將以
-Windows 的安裝流程做為示範，提供讀者在安裝時參考。
+首先， 進入Node.js 的 [官方網站](https://nodejs.org/)， 這邊我們將以 Windows 的安裝流程做為示範，提供讀者在安裝時參考。
 
 ![node-1](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/node-1.png?raw=true)
 
@@ -32,3 +31,4 @@ Windows 的安裝流程做為示範，提供讀者在安裝時參考。
 安裝成功後會跳至安裝完成畫面，點選 "Finish" 即完成安裝流程。
 
 ![node-8](https://github.com/weichinhsu/react-implement/blob/master/Ch1%20React%20Introduction/images/node-8.PNG?raw=true)
+
