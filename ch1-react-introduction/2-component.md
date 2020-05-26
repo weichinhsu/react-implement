@@ -38,8 +38,8 @@ function App() {
 }
 ```
 
-**程式碼說明**   
- 透過 function 來建立一個名為 App 的元件，這邊需要注意，在方法中，我們需要將定義的內容回傳\(return\)，而定義的內容也可以稱為 React Element。
+**程式碼說明**  
+透過 function 來建立一個名為 App 的元件，這邊需要注意，在方法中，我們需要將定義的內容回傳\(return\)，而定義的內容也可以稱為 React Element。
 
 接下來，我們來試著定義一個 Component，如下：
 
@@ -57,8 +57,8 @@ function Welcome() {
 export default Welcome
 ```
 
-**程式碼說明**   
- 定義一個 Welcome 元件，修改完後，記得在最後面的 export default 要將元件改為輸出 Welcome。
+**程式碼說明**  
+定義一個 Welcome 元件，修改完後，記得在最後面的 export default 要將元件改為輸出 Welcome。
 
 ### 1-2 Class Component
 
@@ -80,8 +80,8 @@ class Welcome extends React.Component {
 export default Welcome
 ```
 
-**程式碼說明**   
- 上述程式碼可以看到，render 是在生命週期中用來渲染頁面的方法，透過 render 將要渲染的頁面回傳（return）到畫面上顯示，詳細的生命週期用法將會在後面章節介紹，現在只要了解其代表的意思即可。
+**程式碼說明**  
+上述程式碼可以看到，render 是在生命週期中用來渲染頁面的方法，透過 render 將要渲染的頁面回傳（return）到畫面上顯示，詳細的生命週期用法將會在後面章節介紹，現在只要了解其代表的意思即可。
 
 ## 2. 使用自訂元件
 
@@ -111,6 +111,6 @@ class Main extends React.Component {
 export default Main
 ```
 
-**程式碼說明**   
- 1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 2. 記得在最後面的 export default 要將元件改為輸出 Main。
+**程式碼說明**  
+1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 2. 記得在最後面的 export default 要將元件改為輸出 Main。
 

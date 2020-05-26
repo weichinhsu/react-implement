@@ -1,4 +1,8 @@
-# 補充：Chrome Developer Tools（Chrome開發者工具）
+---
+description: Chrome Developer Tools (Chrome開發者工具)
+---
+
+# 補充：Debugger
 
 執行專案並在瀏覽器上運行後，在瀏覽器上按下鍵盤「F12」或滑鼠右鍵選擇「檢查」，即可開啟 Chrome Developer Tools 中的「Console」來為 React 專案偵錯。
 
