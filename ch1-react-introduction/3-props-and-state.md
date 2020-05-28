@@ -110,6 +110,7 @@ constructor(props){
 ```
 
 **程式碼說明** 
+
 1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 
 2. 生命週期的用法在後面章節會詳細說明，此小節只需要了解 constructor 方法可以初始狀態值即可。
 
@@ -172,7 +173,8 @@ class App extends React.Component {
 export default App;
 ```
 
-**程式碼說明**  
+**程式碼說明**
+
 1. 在 changeTxext 方法中，使用 setState\(\)，改變 saySomething 的值，並將新的狀態設定為 How are you。這邊值得注意的是，setState\(\)可以個別更改狀態，因此修改了 saySomething，myState 並不會受到影響。 
 2. 在render方法中，建立 button 按鈕元素，並設定 onClcik 屬性綁定 changeText\(\) 方法，表示當按下按鈕後，會觸發並執行 changeText\(\) 中的 setState\(\)，來改變 saySomething 的值。
 
@@ -236,7 +238,5 @@ class App extends React.Component {
 }
 ```
 
----
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
 
-如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
-也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
