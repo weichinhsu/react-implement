@@ -93,10 +93,16 @@ Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實�
 
 一般說到 React，一定也會聽過 React Native，它是 React 在 2015 年推出的行動端（Mobile）框架，它可以讓開發者透過 React 和 JavaScript 撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
 
-繼續閱讀
+---
+**繼續閱讀**
 
-* [我的第一個 React 專案](https://github.com/weichinhsu/react-implement/blob/master/ch1-react-introduction/1-first-react-project.md#%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%80%8B-react-%E5%B0%88%E6%A1%88)
-* [Component 元件](https://github.com/weichinhsu/react-implement/blob/master/ch1-react-introduction/2-component.md#react-%E5%9F%BA%E7%A4%8E--component-%E5%85%83%E4%BB%B6)
-* [State v.s. Props](https://github.com/weichinhsu/react-implement/blob/master/ch1-react-introduction/3-props-and-state.md#react-%E5%9F%BA%E7%A4%8E--props-%E8%88%87-state) 
-* [生命週期](https://github.com/weichinhsu/react-implement/blob/master/ch1-react-introduction/4-lifecycle.md#react-%E5%9F%BA%E7%A4%8E--%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F)
+* [我的第一個 React 專案](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/1-first-react-project)
+* [Component 元件](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/2-component)
+* [State v.s. Props](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/3-props-and-state) 
+* [生命週期](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/4-lifecycle)
 
+
+---
+
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
+也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！

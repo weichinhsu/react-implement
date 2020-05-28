@@ -2,6 +2,8 @@
 
 本教學會帶讀者一步一步的實作 React 專案，並使用 Dva 框架，以範例加上逐行程式碼的解說，更快入的進入 React 的世界，目標是讓大家都有能力開發屬於自己的網站。
 
+[Github](https://github.com/weichinhsu/react-implement)
+
 [Gitbook Document](https://weichin.gitbook.io/react-implementation/)
 
 **章節規劃** 

@@ -98,7 +98,13 @@ ReactDOM.render(
 serviceWorker.unregister();
 ```
 
-**程式碼說明** 1. 第1-2行程式碼，引入 React、ReactDOM 元件。 2. 第3行程式碼，CSS 樣式。 3. 第4行程式碼，引入 APP 元件。 4. 第3行程式碼，引入app.json設定檔中的name參數，並命名為appName表示應用程式要顯示的名字。 5. 第5行程式碼，This optional code is used to register a service worker. register\(\) is not called by default. This lets the app load faster on subsequent visits in production, and gives it offline capabilities. 6. 透過 render 方法將 APP 元件渲染到 root element 上。 7. StrictMode 元件是 React 的嚴格模式，用來突顯應用程式裡潛在問題的工具（可不寫），它不會 render 任何可見的 UI。
+**程式碼說明** 
+1. 第1-2行程式碼，引入 React、ReactDOM 元件。 
+2. 第3行程式碼，CSS 樣式。 
+3. 第4行程式碼，引入 APP 元件。 
+4. 第3行程式碼，引入app.json設定檔中的name參數，並命名為appName表示應用程式要顯示的名字。 
+5. 第5行程式碼，This optional code is used to register a service worker. register\(\) is not called by default. This lets the app load faster on subsequent visits in production, and gives it offline capabilities. 6. 透過 render 方法將 APP 元件渲染到 root element 上。 
+7. StrictMode 元件是 React 的嚴格模式，用來突顯應用程式裡潛在問題的工具（可不寫），它不會 render 任何可見的 UI。
 
 ## 4. App.js
 
@@ -206,7 +212,9 @@ jsonFile.json
 
 ## 5. 補充筆記 package.json
 
-package.json 檔案是以 JSON 格式來存放專案的一些資訊，包含專案描述、自訂指令或安裝套件紀錄等，而本小節將會針對安裝套件紀錄詳細說明，也就是檔案中的 dependencies 區塊。 dependencies 區塊為記錄此專案依賴的套件，也就是此專案中所安裝的套件模組，主要是紀錄套件名稱及安裝的版本，如下所示：
+package.json 檔案是以 JSON 格式來存放專案的一些資訊，包含專案描述、自訂指令或安裝套件紀錄等，而本小節將會針對安裝套件紀錄詳細說明，也就是檔案中的 dependencies 區塊。 
+
+dependencies 區塊為記錄此專案依賴的套件，也就是此專案中所安裝的套件模組，主要是紀錄套件名稱及安裝的版本，如下所示：
 
 ```text
 "dependencies": {
@@ -237,5 +245,11 @@ npm install --save react
 
 指令說明 上述指令除了會安裝 react 套件之外，也會將 react 套件名稱與版本新增到 dependencies 中，但若沒有加上「--save」參數，則此套件的名稱可能不會出現在 dependencies 中，而此用意，除了讓開發者可以方便的管理專案套件之外，也可以讓安裝在自己電腦的專案，移動到其他電腦時，只需要在專案根目錄下執行 npm install，就會自動安裝 package.json 清單中相關的套件，避免有些套件沒有安裝到，而造成運行錯誤。
 
+> 最新版本的 npm 已經可以不需要加上 --save，就可以將套件加入 dependencies 中。
+
 上述範例主要目的是讓讀者了解，如何安裝以及解除安裝套件，因此若讀者有接續著專案進行練習的話，要記得將 react 套件安裝回來唷！
 
+---
+
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
+也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！

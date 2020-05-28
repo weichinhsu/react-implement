@@ -62,7 +62,9 @@ export default Welcome
 
 ### 1-2 Class Component
 
-而在建立自訂元件的時候，一個非常重要的地方是，**自訂元件需要 extends 繼承 React Component**，這表示之後在此元件中，便可以使用 React 提供的 `State` 狀態以及`生命週期`，這讓元件可以更容易的進行不同的操作。而本小節將會教導讀者，如何設計一個簡單且實用的自訂元件，其中 State 以及生命週期的使用方式，會分別在往後的章節介紹。
+而在建立自訂元件的時候，一個非常重要的地方是，**自訂元件需要 extends 繼承 React Component**，這表示之後在此元件中，便可以使用 React 提供的 `State` 狀態以及`生命週期`，這讓元件可以更容易的進行不同的操作。
+
+而本小節將會教導讀者，如何設計一個簡單且實用的自訂元件，其中 State 以及生命週期的使用方式，會分別在往後的章節介紹。
 
 首先，建立一個 Welcome 元件，並繼承 React.Component，如下所示：
 
@@ -112,5 +114,10 @@ export default Main
 ```
 
 **程式碼說明**  
-1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 2. 記得在最後面的 export default 要將元件改為輸出 Main。
+1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 
+2. 記得在最後面的 export default 要將元件改為輸出 Main。
 
+---
+
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
+也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
