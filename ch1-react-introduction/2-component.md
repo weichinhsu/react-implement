@@ -114,6 +114,7 @@ export default Main
 ```
 
 **程式碼說明**  
+
 1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 
 2. 記得在最後面的 export default 要將元件改為輸出 Main。
 

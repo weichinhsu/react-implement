@@ -18,7 +18,7 @@ class Hello extends Component{
 }
 ```
 
-**範例說明**  
+**程式碼說明**  
 第4行程式碼，撰寫一個 p 元素，並且裡面放置 this.props.title，並且由大括弧包起，表示此處會顯示由父元件所傳遞過來的 title 屬性。
 
 接著，回到預設輸出的 App 主元件，並且呼叫上述所建立的元件。
@@ -36,7 +36,7 @@ export default class App extends Component{
 }
 ```
 
-**範例說明**  
+**程式碼說明**   
 第5-6行程式碼，呼叫 Hello 元件，且定義一個名為 title 的屬性並設定屬性值。
 
 在元件中，也可以定義多個屬性，我們接續前一個範例，設定 Hello 元件擁有三個屬性，分別為 title、name 和 id，如下所示：
@@ -55,7 +55,7 @@ class Hello extends Component{
 }
 ```
 
-**範例說明**  
+**程式碼說明**   
 第5-7行程式碼，將屬性分別顯示到頁面上。
 
 在 App 主元件中，便可以使用 this.props 設定 title、name 和 id 三個屬性值，如下所示：
@@ -70,7 +70,7 @@ export default class App extends Component{
 }
 ```
 
-**範例說明**  
+**程式碼說明**   
 第4行程式碼，呼叫 Hello 元件，定義 title、name 和 id 三個屬性，並設定屬性值。
 
 了解 props 使用方法後，必須注意一點，在 Component 中，props 是不可改變的，這句話可以理解成，父元件傳遞過來的屬性，無法在子元件中進行更動，如下所示：

@@ -11,6 +11,7 @@
 [Reference : react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 一般而言，生命週期主要分為Mounting、Updating及Unmounting，分別為頁面載入、頁面組件更新以及離開頁面，三種不同的狀態，而在這些狀態下，都會有不同的函式和使用方法，如下所示： 
+
 1. Mounting：組件渲染階段，在這個階段完成了組件的載入和初始化。 
 2. Updating：組件運行和改變階段，這個階段組件可以處理屬性\(props\)和狀態\(state\)改變，並重新渲染頁面組件。 
 3. Unmounting：組件結束階段，離開頁面組件即將被移除時，便會進入此階段。
@@ -37,6 +38,7 @@ constructor(props){
 ```
 
 **程式碼說明**  
+
 1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 
 2. 方式 2 實作 constructor 時，必須呼叫 super\(props\)，否則用到 this.props 時，會發生 undefined 的錯誤。 
 3. 請注意，不可以在 constructor 中呼叫 setState\(\) 方法，並且當頁面上不會使用到 state 以及 props 時，可以不用實作 constructor。
@@ -98,6 +100,7 @@ static getDerivedStateFromProps(nextProps, prevState) {
 ```
 
 **程式碼說明**  
+
 1. 第2-6行程式碼，把新的props\(nextProps.title\)和舊的state\(prevState.title\)做比較。 
 2. 第3-5行程式碼，當nextProps和prevState不相同時，回傳新的title state。 
 3. 第7行程式碼，當nextProps和prevState無差異時，回傳null不更新state。
@@ -116,7 +119,8 @@ shouldComponentUpdate(nextProps, nextState) {
   return false
 }
 ```
-範例說明 
+**程式碼說明** 
+
 1. 第2-4行程式碼，透過this.state取得舊的title值，並和新的nextState.title比較。 
 2. 第3行程式碼，當this.state.title和nextState.title不相同時，回傳true，確認要render頁面。 
 3. 第5行程式碼，當this.state.title和nextState.title相同時，回傳false，不重新render頁面。

@@ -99,11 +99,13 @@ serviceWorker.unregister();
 ```
 
 **程式碼說明** 
+
 1. 第1-2行程式碼，引入 React、ReactDOM 元件。 
 2. 第3行程式碼，CSS 樣式。 
 3. 第4行程式碼，引入 APP 元件。 
 4. 第3行程式碼，引入app.json設定檔中的name參數，並命名為appName表示應用程式要顯示的名字。 
-5. 第5行程式碼，This optional code is used to register a service worker. register\(\) is not called by default. This lets the app load faster on subsequent visits in production, and gives it offline capabilities. 6. 透過 render 方法將 APP 元件渲染到 root element 上。 
+5. 第5行程式碼，This optional code is used to register a service worker. register\(\) is not called by default. This lets the app load faster on subsequent visits in production, and gives it offline capabilities. 
+6. 透過 render 方法將 APP 元件渲染到 root element 上。 
 7. StrictMode 元件是 React 的嚴格模式，用來突顯應用程式裡潛在問題的工具（可不寫），它不會 render 任何可見的 UI。
 
 ## 4. App.js
@@ -124,7 +126,10 @@ function App() {
 export default App;
 ```
 
-**程式碼說明** 1. 建立 APP 元件。 2. export default 將 APP 元件輸出。
+**程式碼說明** 
+
+1. 建立 APP 元件。 
+2. export default 將 APP 元件輸出。
 
 ### 補充筆記 export / export default
 
