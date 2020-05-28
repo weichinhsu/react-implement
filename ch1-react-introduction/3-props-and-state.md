@@ -36,7 +36,7 @@ export default class App extends Component{
 }
 ```
 
-**程式碼說明**   
+**程式碼說明**  
 第5-6行程式碼，呼叫 Hello 元件，且定義一個名為 title 的屬性並設定屬性值。
 
 在元件中，也可以定義多個屬性，我們接續前一個範例，設定 Hello 元件擁有三個屬性，分別為 title、name 和 id，如下所示：
@@ -55,7 +55,7 @@ class Hello extends Component{
 }
 ```
 
-**程式碼說明**   
+**程式碼說明**  
 第5-7行程式碼，將屬性分別顯示到頁面上。
 
 在 App 主元件中，便可以使用 this.props 設定 title、name 和 id 三個屬性值，如下所示：
@@ -70,7 +70,7 @@ export default class App extends Component{
 }
 ```
 
-**程式碼說明**   
+**程式碼說明**  
 第4行程式碼，呼叫 Hello 元件，定義 title、name 和 id 三個屬性，並設定屬性值。
 
 了解 props 使用方法後，必須注意一點，在 Component 中，props 是不可改變的，這句話可以理解成，父元件傳遞過來的屬性，無法在子元件中進行更動，如下所示：
@@ -109,7 +109,7 @@ constructor(props){
 }
 ```
 
-**程式碼說明** 
+**程式碼說明**
 
 1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 
 2. 生命週期的用法在後面章節會詳細說明，此小節只需要了解 constructor 方法可以初始狀態值即可。
@@ -238,5 +238,7 @@ class App extends React.Component {
 }
 ```
 
+{% hint style="info" %}
 如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
 

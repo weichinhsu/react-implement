@@ -93,7 +93,6 @@ Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實�
 
 一般說到 React，一定也會聽過 React Native，它是 React 在 2015 年推出的行動端（Mobile）框架，它可以讓開發者透過 React 和 JavaScript 撰寫出類似原生（Native）程式的應用程式，因此在其發行後，便受到許多開發者的歡迎。
 
----
 **繼續閱讀**
 
 * [我的第一個 React 專案](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/1-first-react-project)
@@ -101,8 +100,7 @@ Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實�
 * [State v.s. Props](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/3-props-and-state) 
 * [生命週期](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/4-lifecycle)
 
+{% hint style="info" %}
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
 
----
-
-如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
-也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！

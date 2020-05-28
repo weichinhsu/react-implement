@@ -10,7 +10,7 @@
 
 [Reference : react-lifecycle-methods-diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-一般而言，生命週期主要分為Mounting、Updating及Unmounting，分別為頁面載入、頁面組件更新以及離開頁面，三種不同的狀態，而在這些狀態下，都會有不同的函式和使用方法，如下所示： 
+一般而言，生命週期主要分為Mounting、Updating及Unmounting，分別為頁面載入、頁面組件更新以及離開頁面，三種不同的狀態，而在這些狀態下，都會有不同的函式和使用方法，如下所示：
 
 1. Mounting：組件渲染階段，在這個階段完成了組件的載入和初始化。 
 2. Updating：組件運行和改變階段，這個階段組件可以處理屬性\(props\)和狀態\(state\)改變，並重新渲染頁面組件。 
@@ -37,7 +37,7 @@ constructor(props){
 }
 ```
 
-**程式碼說明**  
+**程式碼說明**
 
 1. 上述程式碼可以看到不管是方式 1 或是方式 2 ，都設定了一個 test state，並指定值為 0。 
 2. 方式 2 實作 constructor 時，必須呼叫 super\(props\)，否則用到 this.props 時，會發生 undefined 的錯誤。 
@@ -99,7 +99,7 @@ static getDerivedStateFromProps(nextProps, prevState) {
 }
 ```
 
-**程式碼說明**  
+**程式碼說明**
 
 1. 第2-6行程式碼，把新的props\(nextProps.title\)和舊的state\(prevState.title\)做比較。 
 2. 第3-5行程式碼，當nextProps和prevState不相同時，回傳新的title state。 
@@ -109,9 +109,9 @@ static getDerivedStateFromProps(nextProps, prevState) {
 
 當props或state要更新時，便會觸發此方法，並回傳（return）true表示要重新render頁面，或回傳false表示不render頁面，而其接收兩個參數，第一個為要更新的props，第二個則是要更新的state。
 
-此方法通常用在，避免頁面不必要的重新render，此方法比較this.props和nextProps，及this.state和nextState的差異，決定是否重新render頁面，如下所示： 
+此方法通常用在，避免頁面不必要的重新render，此方法比較this.props和nextProps，及this.state和nextState的差異，決定是否重新render頁面，如下所示：
 
-``` javascript 
+```javascript
 shouldComponentUpdate(nextProps, nextState) { 
   if (this.state.title != nextState.title) { 
     return true;
@@ -119,7 +119,8 @@ shouldComponentUpdate(nextProps, nextState) {
   return false
 }
 ```
-**程式碼說明** 
+
+**程式碼說明**
 
 1. 第2-4行程式碼，透過this.state取得舊的title值，並和新的nextState.title比較。 
 2. 第3行程式碼，當this.state.title和nextState.title不相同時，回傳true，確認要render頁面。 
@@ -139,7 +140,7 @@ shouldComponentUpdate(nextProps, nextState) {
 
 當組件要從頁面上被移除時，也就是說使用者離開頁面前，會調用此方法，適合用來處理離開頁面後的關閉監聽或是計時\(timer\)等清理工作。
 
----
+{% hint style="info" %}
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
 
-如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
-也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！

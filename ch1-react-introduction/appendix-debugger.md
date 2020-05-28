@@ -14,7 +14,7 @@ description: Chrome Developer Tools (Chrome開發者工具)
 
 ![debug](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/debug-2.png?raw=true)
 
----
+{% hint style="info" %}
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
 
-如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
-也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！

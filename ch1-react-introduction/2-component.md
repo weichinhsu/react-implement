@@ -113,12 +113,14 @@ class Main extends React.Component {
 export default Main
 ```
 
-**程式碼說明**  
+**程式碼說明**
 
 1. 在 Main 元件中，可以重複呼叫 Welcome 元件，如此一來，就可以縮減頁面上的程式行數，讓程式更好閱讀。 
 2. 記得在最後面的 export default 要將元件改為輸出 Main。
 
----
+{% hint style="info" %}
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
 
-如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。
-也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+
+
