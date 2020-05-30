@@ -1,4 +1,4 @@
-# Ch3 使用 Github Pages 架設 React 專案
+# Ch2 使用 Github Pages 架設 React 專案
 
 > 本章節會沿用之前建立的 my-first-project 專案。
 
@@ -80,7 +80,7 @@ git remote add origin git@github.com:weichinhsu/my-first-react.git
 git push -u origin master
 ```
 
-完成後，再回到剛剛建立的 Github Repositor 頁面上，便可以看到專案囉！
+完成後，再回到剛剛建立的 Github Repository 頁面上，便可以看到專案囉！
 
 ![github-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-4.png?raw=true)
 
