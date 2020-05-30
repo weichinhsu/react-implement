@@ -15,9 +15,9 @@
 * [State v.s. Props](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/3-props-and-state) 
 * [生命週期](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/4-lifecycle)
 
-2. Dva 架構
+2. React + Github Pages + Bootstrap 
 
-3. React + Bootstrap
+3. Dva 架構
 
 4. React + Opendata
 
