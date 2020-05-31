@@ -71,7 +71,10 @@ git add .
 ```
 git commit -m "first commit"
 ```
-將本地的專案與 Github 連結，指令如下，請注意這邊 remote 的位置資訊要改為讀者在前面所設定的 Repository 資訊：
+將本地的專案與 Github 連結，指令如下：
+
+> 請注意這邊 remote 的位置資訊要改為讀者在前面所設定的 Repository 資訊。
+
 ```
 git remote add origin git@github.com:weichinhsu/my-first-react.git
 ```
@@ -90,6 +93,7 @@ git push -u origin master
 cd my-first-project
 npm install --save-dgh-pages ev
 ```
+> gh-pages github reference: https://github.com/tschaub/gh-pages
 
 ## 步驟四：設定 package.json
 開啟專案中的 package.json，設定 homepage 屬性，如下第三行。
@@ -117,7 +121,7 @@ homepage 的格式為 `https://Github帳號名.github.io/Repository名稱`
 
 完成後，我們要將這次新增的設定，更新到 Github 上。所以一樣開啟終端機，在專案中依序輸入以下指令：
 
-> 請記得也要在專案目錄下執行 git 指令噢！）
+> 請記得也要在專案目錄下執行 git 指令噢！
 
 ```
 git add .
@@ -131,7 +135,7 @@ npm run deploy
 ```
 
 ## 步驟五：查看專案
-完成部署後，開啟 Github Repository 專案的位置，點擊「Setting」按鈕。
+完成部署後，開啟 Github Repository 專案的位置，點擊「Settings」按鈕。
 
 ![github-6](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-6.png?raw=true)
 
@@ -145,3 +149,6 @@ npm run deploy
 執行 `npm run deploy` 部署網頁後，如果進入 Github Pages 時是顯示 404 Not found 的頁面時，請等待幾分鐘的時間完成發布。
 {% endhint %}
 
+{% hint style="info" %}
+如果這篇文章對你有幫助，可以前往 [Github react-implement](https://github.com/weichinhsu/react-implement) 按下 Star 來支持我，我會不定期的更新教學內容。 也可以 follow 我的 Github 帳號，未來我也會繼續寫更多的網頁技術與大家分享！
+{% endhint %}
