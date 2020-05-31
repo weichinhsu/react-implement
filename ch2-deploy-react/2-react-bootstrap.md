@@ -37,7 +37,7 @@
 
 從上一個步驟的觀察，可以知道會使用到三個資料夾下的檔案，分別是`assets`、`css`與`js`資料夾，所以要把這三個資料夾加入 React 專案中 public 資料夾中，如下圖所示：
 
-![bootstrap-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-2.png?raw=true)
+![bootstrap-3](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-3.png?raw=true)
 
 ### 步驟四：修改 React 專案中的 index.html
 
