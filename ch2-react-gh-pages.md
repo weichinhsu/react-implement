@@ -84,10 +84,64 @@ git push -u origin master
 
 ![github-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-4.png?raw=true)
 
-## 步驟一：安裝 Github Pages 套件
-進入要架設網站的專案中，並安裝 gh-pages 
+## 步驟三：安裝 Github Pages 套件
+進入要架設網站的專案中，並安裝 gh-pages，如下：
 ```
 cd my-first-project
 npm install --save-dgh-pages ev
 ```
+
+## 步驟四：設定 package.json
+開啟專案中的 package.json，設定 homepage 屬性，如下第三行。
+
+> 請注意 homepage 的值需要設定成讀者在 Github 上的 Repository 位置。
+
+``` json
+"name": "my-first-react",
+"version": "0.1.0",
+"homepage": "https://weichinhsu.github.io/my-first-react",
+"private": true,
+//...
+```
+
+{% hint style="info" %}
+homepage 的格式為 `https://Github帳號名.github.io/Repository名稱`
+{% endhint %}
+
+接著同樣在 package.json 中，找到 scripts 區塊，並加上 predeploy 與 deploy 屬性，如下：
+```json
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
+![加上 scripts](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-5.png?raw=true)
+
+完成後，我們要將這次新增的設定，更新到 Github 上。所以一樣開啟終端機，在專案中依序輸入以下指令：
+
+> 請記得也要在專案目錄下執行 git 指令噢！）
+
+```
+git add .
+git commit -m "set gh-pages"
+git push
+```
+
+接著輸入部署指令，將專案自動部署到 Github Pages 上：
+```
+npm run deploy
+```
+
+## 步驟五：查看專案
+完成部署後，開啟 Github Repository 專案的位置，點擊「Setting」按鈕。
+
+![github-6](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-6.png?raw=true)
+
+進入 Setting，往下滑就可以看到 Github Pages 的區塊，如下圖，網頁上會告訴你，專案的已經發佈，`Your site is published at https://weichinhsu.github.io/my-first-react/`，點擊網址後，就可以看到自己的網頁囉！
+
+> 下圖只是示意圖，因此網址會是前面在 package.json 上設定的 homepage 路徑。
+
+![github-7](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-7.png?raw=true)
+
+{% hint style="info" %}
+執行 `npm run deploy` 部署網頁後，如果進入 Github Pages 時是顯示 404 Not found 的頁面時，請等待幾分鐘的時間完成發布。
+{% endhint %}
 
