@@ -1,28 +1,8 @@
-# Ch2 架設 React 專案
+# 2-1 GitHub Pages
 
 > 本章節會沿用之前建立的 my-first-project 專案。
 
 本章節會教大家如何夠過 Github Pages 來架設一個屬於自己的網站。
-
-在開始架設之前，有幾的本章節會使用的到知識，這邊跟大家稍微介紹一下，如果想更詳細了解的讀者可以點擊 Reference 進入維基查看更多。
-
-**什麼是 Git？**
-
-Git 是一個分散式版本控制軟體，很常被用來進行專案的版本控制。
-
-[Reference: git Wikipedia](https://zh.wikipedia.org/wiki/Git)
-
-**什麼是 GitHub？**
-
-GitHub 是透過 Git 進行版本控制的**軟體原始碼代管服務平台**。
-
-[Reference: GitHub Wikipedia](https://zh.wikipedia.org/wiki/GitHub)
-
-**什麼是 GitHub Pages？**
-
-GitHub Pages 是 GitHub 提供的一個網頁寄存服務，於2008年推出。可以**用於存放靜態網頁，包括博客、項目文檔甚至整本書**。
-
-[Reference: GitHub Pages Wikipedia](https://zh.wikipedia.org/wiki/GitHub_Pages)
 
 ## 步驟一：建立 GitHub Repository
 
