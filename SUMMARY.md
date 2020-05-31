@@ -10,4 +10,5 @@
   * [補充：Debugger](ch1-react-introduction/appendix-debugger.md)
 * [Ch2 架設 React 專案](ch2-deploy-react/README.md)
   * [2-1 GitHub Pages](ch2-deploy-react/ch2-react-gh-pages.md)
+  * [2-2 Bootstrap](ch2-deploy-react/2-react-bootstrap.md)
 
