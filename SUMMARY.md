@@ -8,5 +8,5 @@
   * [1-4 生命週期](ch1-react-introduction/4-lifecycle.md)
   * [補充：安裝 Node.js](ch1-react-introduction/appendix-nodejs.md)
   * [補充：Debugger](ch1-react-introduction/appendix-debugger.md)
-* [Ch2 使用 Github Pages 架設 React 專案](ch2-shi-yong-github-pages-jia-she-react-zhuan-an.md)
+* [Ch2 架設 React 專案](ch2-shi-yong-github-pages-jia-she-react-zhuan-an.md)
 

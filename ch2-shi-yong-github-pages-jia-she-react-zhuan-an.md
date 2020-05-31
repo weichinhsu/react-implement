@@ -1,4 +1,4 @@
-# Ch2 使用 Github Pages 架設 React 專案
+# Ch2 架設 React 專案
 
 > 本章節會沿用之前建立的 my-first-project 專案。
 
