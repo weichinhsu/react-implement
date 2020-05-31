@@ -9,11 +9,11 @@
 **章節規劃**
 
 1. [React 介紹](https://weichin.gitbook.io/react-implementation/ch1-react-introduction)
-2. [我的第一個 React 專案](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/1-first-react-project)
-3. [Component 元件](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/2-component)
-4. [State v.s. Props](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/3-props-and-state) 
-5. [生命週期](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/4-lifecycle)
-6. React + Github Pages + Bootstrap
-7. Dva 架構
-8. React + Opendata
+   1. [我的第一個 React 專案](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/1-first-react-project)
+   2. [Component 元件](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/2-component)
+   3. [State v.s. Props](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/3-props-and-state) 
+   4. [生命週期](https://weichin.gitbook.io/react-implementation/ch1-react-introduction/4-lifecycle)
+2. React + Github Pages + Bootstrap
+3. Dva 架構
+4. React + Opendata
 
