@@ -45,5 +45,5 @@
 
 ### 步驟六：引入 Components
 
-### 步驟七：更新 GitHub 
+### 步驟七：更新 GitHub
 

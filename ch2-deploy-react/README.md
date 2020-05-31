@@ -8,21 +8,21 @@
 
 在開始架設之前，有幾的本章節會使用的到知識，這邊跟大家稍微介紹一下，如果想更詳細了解的讀者可以點擊 Reference 進入維基查看更多。
 
-#### **什麼是 Git？**
+### **什麼是 Git？**
 
 Git 是一個分散式版本控制軟體，很常被用來進行專案的版本控制。
 
-[Git 官方網站  
+[Git 官方網站    
 ](https://git-scm.com/)[Reference: git Wikipedia](https://zh.wikipedia.org/wiki/Git)
 
-#### **什麼是 GitHub？**
+### **什麼是 GitHub？**
 
 GitHub 是透過 Git 進行版本控制的**軟體原始碼代管服務平台**。
 
 [GitHub 官方網站](https://github.com/)  
 [Reference: GitHub Wikipedia](https://zh.wikipedia.org/wiki/GitHub)
 
-#### **什麼是 GitHub Pages？**
+### **什麼是 GitHub Pages？**
 
 GitHub Pages 是 GitHub 提供的一個網頁寄存服務，於2008年推出。可以**用於存放靜態網頁，包括博客、項目文檔甚至整本書**。
 
@@ -33,7 +33,7 @@ GitHub Pages 是 GitHub 提供的一個網頁寄存服務，於2008年推出。�
 
 接著在第二小節，會教大家使用 Bootstrap 免費的模板來快速讓網頁變得有質感，同時也會講解如何用 Bootstrap 的元件，當要自己開發網頁時，也可以省去很多設計的時間。
 
-#### **什麼是** Bootstrap**？**
+### **什麼是** Bootstrap**？**
 
 Bootstrap 是一組用於網站和網路應用程式開發的開源前端框架，包括 HTML、CSS 及JavaScript 的框架，提供字體排印、表單、按鈕、導航及其他各種元件及 Javascript 擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
 
