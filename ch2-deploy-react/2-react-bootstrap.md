@@ -1,6 +1,6 @@
 # 2-2 Bootstrap 套版
 
-> 本章節會沿用之前建立的 my-first-project 專案。
+> 本章節會沿用之前建立的 my-first-project 專案來說明，讀者也可以新建一個專案，若忘記如何建立專案可以參考 [1-1 建立第一個 React 專案](https://weichin.gitbook.io/react-implement/ch1-react-introduction/1-first-react-project)。
 
 有寫過網頁的讀者一定有聽過 Bootstrap，它提供許多好用的元件，讓我們在開發時，可以省去許多設計元件的時間，對 HTML 和 CSS 不熟的讀者來說是一大福音，同時使用 Bootstrap 的優點還有可以很容易讓網站達到響應式（Responsive web design，通常縮寫為RWD）的要求。
 
@@ -27,7 +27,9 @@
 
 ### 步驟二：觀察模板的 index.html
 
-打開模板的專案與之前建立的專案 my-first-project （讀者也可以新建一個專案），首先，我們要先觀察模板專案的 index.html 檔中引入了哪些檔案（只要觀察 index.html 的最前面及最後面）。
+打開模板的專案與之前建立的專案 my-first-project （讀者也可以新建一個專案，若忘記如何建立專案可以參考 [1-1 建立第一個 React 專案](https://weichin.gitbook.io/react-implement/ch1-react-introduction/1-first-react-project)）。
+
+首先，我們要先觀察模板專案的 index.html 檔中引入了哪些檔案（只要觀察 index.html 的最前面及最後面）。
 
 在模板的 index.html 的最上面，head 標籤中，找到 link 相關的標籤，並看到 href 屬性，如果**不是完整的一個網址**，就代表他是從專案中引入的檔案，如下圖兩個紅框的 href 屬性分別是`assets/img/favicon.ico`和`css/styles.css` ，表示一個是引入 `assets` 資料夾下的檔案，另一個是引入`css` 下的檔案。
 
@@ -118,7 +120,7 @@ export default Navigation;
 3. 第 30 行程式碼，將 Navigation component 匯出。
 
 {% hint style="danger" %}
-一般我們在 HTML 標籤上很常看到的 class 類別，在 React 中叫做 className，所以讀者在複製  HTML 到 React 的專案中時，請記得將 class 改為 className 噢！
+一般我們在 HTML 標籤上很常看到的 class 類別，在 React 中叫做 className，所以讀者在複製 HTML 到 React 的專案中時，請記得將 class 改為 className 噢！
 {% endhint %}
 
 再以 Masthead 區塊為例，一樣在 components 資料夾下建立 Masthead.js，如下所示：
@@ -211,5 +213,54 @@ npm run deploy
 
 發佈指令完成 published 後，便可以到之前 GitHub Pages 的網址瀏覽本章節建立 Bootstrap 模板的結果囉！
 
+## React Bootstrap
 
+如果讀者想要自己設計一個網頁，建議使用 React Bootstrap 來建立頁面，原因是 React Bootstrap 已經將原本 Bootstrap 提供的元件，轉換為 React 形式的 Component，所以使用起來會更貼近 React 的理念，以下開始教大家如何使用 React Bootstrap。
+
+[React Bootstrap 官方網站](https://react-bootstrap.github.io/)
+
+### 步驟一：安裝
+
+首先，開啟終端機，輸入以下指令，進入專案中，並安裝 react-bootstrap 與 bootstrap 套件：
+
+```text
+cd my-first-project
+npm install react-bootstrap bootstrap
+```
+
+### 步驟二：使用方式
+
+安裝完成後，就可以在頁面上引入 React Bootstrap 提供的 Components，使用方式如下，在 App.js 檔案中，加入一個 Button Component：
+
+```javascript
+import React, { Component } from 'react';
+import './App.css';
+import { Button } from 'react-bootstrap';
+
+class App extends Component {
+  render() {
+    const { isShow } = this.state
+    return (
+      <div className="App">
+        <Button variant="primary">Primary</Button>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+**程式碼說明**
+
+1. 第 3 行程式碼，從 react-bootstrap 引入 Button 元件。
+2. 第 10 行程式碼，在頁面上加入 Button 元件，並設定一些基本屬性。
+
+> 元件屬性的設定方式可以到 React Bootstrap 官網上查詢。
+
+從上述的範例，很快地就可以使用 react-bootstrap 的元件，而我們也可以從 React Bootstrap 的官網上查詢其他可以使用的元件、使用方式以及元件的屬性等。
+
+[點擊查看 React Bootstrap 其他元件](https://react-bootstrap.github.io/components/alerts)
+
+進入 React Bootstrap 官網後，點擊上方選單的「Components」按鈕，接著，在左側便可以看到所有提供的元件，如下圖所示，每個元件都有詳細的使用方式說明，因此讀者想要使用時，便可以直接過來這邊查詢即可！
 
