@@ -16,6 +16,8 @@
 
 本範例以 [Freelancer](https://startbootstrap.com/themes/freelancer/) 模板為例。
 
+![bootstrap-0](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-0.png?raw=true)
+
 > 本小節教大家套版的方式不限於使用 Bootstrap 的模板，也可以是任意的模版網站提供的模板，但需要注意的是，讀者在使用免費模板時，需要注意模板的 License，也盡量不使用來路不明的模板，別因為一時的方便，造成後續的麻煩。
 >
 > 除了本小節會使用的 [Start Bootstrap](https://startbootstrap.com/themes/) 模板網站，這邊也提供幾個不錯的免費模板網站讓大家有更多的選樣，請記得在使用前一樣要先了解模板的 License 噢！  
@@ -58,11 +60,15 @@ Notice the use of %PUBLIC\_URL% in the tags above. It will be replaced with the 
 
 完成後的 head 如下圖，基本上是模板上有引入什麼，在 React 中的 index.html 就引入什麼：
 
+![bootstrap-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-4.png?raw=true)
+
 {% hint style="warning" %}
 這邊請記得，剛剛在模板中看到的完整網址（包含 link 標籤的 href 屬性與 script 標籤的 src 屬性）也要引入。
 {% endhint %}
 
 最後，在 body 標籤內的最下方引入 script，如下圖，一樣剛剛在模板中看到的完整網址（script 標籤的 src 屬性）也要引入：
+
+![bootstrap-5](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-5.png?raw=true)
 
 ### 步驟五：分割模板的 index.html
 
