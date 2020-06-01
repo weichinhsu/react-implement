@@ -1,4 +1,4 @@
-# 2-1 GitHub Pages
+# 2-1 GitHub Pages 架站
 
 > 本章節會沿用之前建立的 my-first-project 專案。
 
