@@ -77,7 +77,7 @@ git push -u origin master
 
 ```text
 cd my-first-project
-npm install --save-dgh-pages ev
+npm install gh-pages --save-dev
 ```
 
 > gh-pages github reference: [https://github.com/tschaub/gh-pages](https://github.com/tschaub/gh-pages)
