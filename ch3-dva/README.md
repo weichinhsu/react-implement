@@ -13,11 +13,15 @@ Dva 是一個由 Redux 所衍伸而來框架，目的是實作出簡單又易操
 
 一個最基本的流程包含了 View 頁面、Model 以及 State 狀態，下圖可以看到，從 View 頁面發送 Action 動作請求，而 Model 接收到動作後，便會透過 Reducer 處理請求資料，完成後更新儲存在 State 中的資料，而當 State 的資料更動了，就會重新渲染頁面上的組件，如此便是一圈完整的 Dva 運作流程。
 
+![dva-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch3/dva-1.png?raw=true)
+
 為了讓讀者可以更清楚的了解整個流程，我們以待辦清單專案為例來說明，當使用者在頁面上輸入待辦項目，按下確認按鈕後，便會發送一個Action到Model中的Reducer處理，完成後更新State的待辦清單資料，最後會重新渲染頁面，將待辦事項顯示在頁面上。
 
 #### Dva處理非同步流程
 
 當需要處理非同步問題時，流程便會如下圖，當View發送Action請求時，會由Model的Effect處理，此時Effect會發出HTTP向Server後端請求資料，接著由Reducer將取得的資料更新State並重新渲染頁面即完成流程。
+
+![dva-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch3/dva-2.png?raw=true)
 
 這邊同樣也以例子來說明，在登入某個網頁時，在頁面輸入帳號密碼，點下登入按鈕後，頁面會發送一個登入 Action，而 Model 的 Effect 接收到，便會開始進行 HTTP 請求，向後端發送登入要求，當後端驗證使用者帳號密碼成功後，返回使用者資料，此時 Effect 便會將取得的資料給 Reducer，進行儲存及更新 State，最後刷新頁面顯示登入成功及使用者資訊。
 
