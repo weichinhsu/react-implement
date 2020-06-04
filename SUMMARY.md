@@ -11,5 +11,6 @@
 * [Ch2 架設 React 專案](ch2-deploy-react/README.md)
   * [2-1 GitHub Pages 架站](ch2-deploy-react/1-react-gh-pages.md)
   * [2-2 Bootstrap 套版](ch2-deploy-react/2-react-bootstrap.md)
-* [Ch3 Dva 架構](undefined.md)
+* [Ch3 Dva 架構](ch3-dva/README.md)
+  * [3-1 Model 的格式與操作](ch3-dva/1-dva-model.md)
 
