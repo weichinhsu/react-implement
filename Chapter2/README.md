@@ -21,15 +21,12 @@ Flux是一個單向資料流的概念，為了保護資料，它規定要存取�
 
 為了管理在React Native中變化不斷的state，Redux實作出Flux的概念，簡化程式的複雜度，理念大致上都與Flux相同，一樣都是單向資料流的運作方式，並新增了Reducer的概念，用來管理儲存在Store中的資料。
 
-為了讓讀者更清楚地了解，以圖 62 來說明，可以看到在View觸發更新儲存在Store的State資料事件時，會傳送一個請求到Action Creator進行資料的處理並建立一個UPDATE action，接著將action發送到Reducer找到儲存在Store中正確的State值更新，最後便會重新渲染有取用Store的View，讓所有Hello更新為你好，這邊值得注意的是，Store的資料在View中是以Props的方式取得，表示是不能在頁面中隨意更動的值，必須透過發送完整的Redux流程才能更新。
+為了讓讀者更清楚地了解，以下圖來說明，可以看到在View觸發更新儲存在Store的State資料事件時，會傳送一個請求到Action Creator進行資料的處理並建立一個UPDATE action，接著將action發送到Reducer找到儲存在Store中正確的State值更新，最後便會重新渲染有取用Store的View，讓所有Hello更新為你好，這邊值得注意的是，Store的資料在View中是以Props的方式取得，表示是不能在頁面中隨意更動的值，必須透過發送完整的Redux流程才能更新。
 
 ![](https://i.imgur.com/LyWD47d.png)
 
 這邊同樣以新增待辦清單例子來說，當使用者在頁面上輸入待辦項目，按下確認按鈕後，便會發送一個新增待辦項目的請求到Action Creator步驟，將資料進行處理，完成後會建立一個新增待辦事項action，並進入Reducer步驟，將資料存入Store中，最後會重新渲染頁面，將新增待辦事項顯示在頁面上。
 
 
-## React Redux
 
-## Redux 的概念
 
-## 第一個 Redux 專案
