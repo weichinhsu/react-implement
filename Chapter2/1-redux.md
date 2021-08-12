@@ -30,3 +30,7 @@ export default class App extends Component {
 第3行程式碼，從redux中引入createStore。
 第6行程式碼，透過createStore方法，建立Store儲存空間。
 第11-13行程式碼，透過Provider將store綁定給頁面，讓HomePage元件便能夠存取store中的資料。
+
+# Redux 概念
+
+了解Redux的概念後，本小節將要帶讀者了解如何實際應用這些觀念，並依照前面提到的Redux流程依序介紹Component與Container、action與dispatch、Action Creator、Reducer以及Store。
