@@ -87,7 +87,7 @@ document.getElementById("Content").appendChild(node);
 
 ## Flux/Redux/Dva概念
 
-Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實作出 Flux 的概念，透過 Redux 框架，在程式中便可以更輕鬆的管理狀態（state），最後 Dva 是改善了 Redux 的缺點後所發展出來的架構，本教學也會以 Dva 為主要使用架構。
+Flux 是一個由 Fackbook 提出的單向資料流概念，而 Redux 則是實作出 Flux 的概念，透過 Redux 框架，在程式中便可以更輕鬆的管理狀態（state），最後 Dva 是改善了 Redux 的缺點後所發展出來的架構，本教學會分別說明及實作 Redux 及 Dva 兩個框架 。
 
 ## React Native
 
