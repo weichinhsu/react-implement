@@ -10,15 +10,15 @@
 
 首先，登入 GitHub 後，來建立一個 Repository，如下圖，點擊右上角的圖像，並選擇「Your Repositories」。
 
-![github-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-1.png?raw=true)
+![github-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-1.png?raw=true)
 
 接著點擊右上角的「New」按鈕，來新增一個 Repository。
 
-![github-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-2.png?raw=true)
+![github-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-2.png?raw=true)
 
 設定 Repository
 
-![github-3](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-3.png?raw=true)
+![github-3](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-3.png?raw=true)
 
 **說明**
 
@@ -69,7 +69,7 @@ git push -u origin master
 
 完成後，再回到剛剛建立的 Github Repository 頁面上，便可以看到專案囉！
 
-![github-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-4.png?raw=true)
+![github-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-4.png?raw=true)
 
 ## 步驟三：安裝 Github Pages 套件
 
@@ -107,7 +107,7 @@ homepage 的格式為 `https://Github帳號名.github.io/Repository名稱`
 "deploy": "gh-pages -d build"
 ```
 
-![&#x52A0;&#x4E0A; scripts](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-5.png?raw=true)
+![&#x52A0;&#x4E0A; scripts](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-5.png?raw=true)
 
 完成後，我們要將這次新增的設定，更新到 Github 上。所以一樣開啟終端機，在專案中依序輸入以下指令：
 
@@ -129,13 +129,13 @@ npm run deploy
 
 完成部署後，開啟 Github Repository 專案的位置，點擊「Settings」按鈕。
 
-![github-6](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-6.png?raw=true)
+![github-6](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-6.png?raw=true)
 
 進入 Setting，往下滑就可以看到 Github Pages 的區塊，如下圖，網頁上會告訴你，專案的已經發佈，`Your site is published at https://weichinhsu.github.io/my-first-react/`，點擊網址後，就可以看到自己的網頁囉！
 
 > 下圖只是示意圖，因此網址會是前面在 package.json 上設定的 homepage 路徑。
 
-![github-7](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/github-7.png?raw=true)
+![github-7](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/github-7.png?raw=true)
 
 {% hint style="warning" %}
 執行 `npm run deploy` 部署網頁後，如果進入 Github Pages 時是顯示 404 Not found 的頁面時，請等待幾分鐘的時間完成發布。

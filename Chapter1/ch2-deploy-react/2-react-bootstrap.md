@@ -16,7 +16,7 @@
 
 本範例以 [Freelancer](https://startbootstrap.com/themes/freelancer/) 模板為例。
 
-![bootstrap-0](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-0.png?raw=true)
+![bootstrap-0](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-0.png?raw=true)
 
 > 本小節教大家套版的方式不限於使用 Bootstrap 的模板，也可以是任意的模版網站提供的模板，但需要注意的是，讀者在使用免費模板時，需要注意模板的 License，也盡量不使用來路不明的模板，別因為一時的方便，造成後續的麻煩。
 >
@@ -33,11 +33,11 @@
 
 在模板的 index.html 的最上面，head 標籤中，找到 link 相關的標籤，並看到 href 屬性，如果**不是完整的一個網址**，就代表他是從專案中引入的檔案，如下圖兩個紅框的 href 屬性分別是`assets/img/favicon.ico`和`css/styles.css` ，表示一個是引入 `assets` 資料夾下的檔案，另一個是引入`css` 下的檔案。
 
-![bootstrap-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-1.png?raw=true)
+![bootstrap-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-1.png?raw=true)
 
 接著，看到模板的 index.html 的最下方引入 Javascript 的地方，一樣找到 script 標籤中 src 屬性不是完整網址的標籤，如下圖紅框處，分別是`assets`資料夾下的檔案和`js`資料夾下的檔案。
 
-![bootstrap-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-2.png?raw=true)
+![bootstrap-2](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-2.png?raw=true)
 
 {% hint style="warning" %}
 link 標籤的 href 屬性與 script 標籤的 src 屬性，如果不是呈現完整的網址時，表示它是引入本地專案中的檔案，如果是網址的模式，表示它是取自網路上公開的資源。
@@ -49,7 +49,7 @@ link 標籤的 href 屬性與 script 標籤的 src 屬性，如果不是呈現�
 
 從上一個步驟的觀察，可以知道模板會使用到三個資料夾下的檔案，分別是`assets`、`css`與`js`資料夾，所以要把這三個資料夾加入 React 專案中 public 資料夾中，如下圖所示：
 
-![bootstrap-3](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-3.png?raw=true)
+![bootstrap-3](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-3.png?raw=true)
 
 ### 步驟四：修改 React 專案中的 index.html
 
@@ -62,7 +62,7 @@ Notice the use of %PUBLIC\_URL% in the tags above. It will be replaced with the 
 
 完成後的 head 如下圖，基本上是模板上有引入什麼，在 React 中的 index.html 就引入什麼：
 
-![bootstrap-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-4.png?raw=true)
+![bootstrap-4](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-4.png?raw=true)
 
 {% hint style="warning" %}
 這邊請記得，剛剛在模板中看到的完整網址（包含 link 標籤的 href 屬性與 script 標籤的 src 屬性）也要引入。
@@ -70,7 +70,7 @@ Notice the use of %PUBLIC\_URL% in the tags above. It will be replaced with the 
 
 最後，在 body 標籤內的最下方引入 script，如下圖，一樣剛剛在模板中看到的完整網址（script 標籤的 src 屬性）也要引入：
 
-![bootstrap-5](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/bootstrap-5.png?raw=true)
+![bootstrap-5](https://github.com/weichinhsu/react-implement/blob/master/images/ch1/bootstrap-5.png?raw=true)
 
 ### 步驟五：分割模板的 index.html
 

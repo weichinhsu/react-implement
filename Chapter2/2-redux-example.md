@@ -21,7 +21,7 @@ cd my-redux-app
 接著透過npm，開始安裝一些我們之後會使用到的實用套件：
 ```
 npm install react-router-dom
-npm install antd                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+npm install antd
 ```
 套件說明
 1. react-router-dom: 路由工具，我們之後會使用此工具來實作跳頁功能。
@@ -35,7 +35,7 @@ npm install antd
 
 在網頁上瀏覽專案就可以看到預設的範例是一個計數器。
 
-> 補圖
+![example-1](https://github.com/weichinhsu/react-implement/blob/master/images/ch2/redux-example-1.png?raw=true)
 
 ## 專案介紹及初步的設定
 
