@@ -62,7 +62,7 @@ npm start
 ```text
 ├──node_module/       # JS 套件庫（JS Libraries）
 ├──public/            # Static file
-├──src/               # 專案漲
+├──src/               # 放我們撰寫的程式的資料夾
     ├──App.js         # 預設第一個頁面
     ├──index.js       # 預設 React 專案入口
 ├──package.json       # JS相依性紀錄檔

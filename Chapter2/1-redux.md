@@ -5,32 +5,33 @@
 接下來，我們必須了解React Redux提供了哪些重要的功能，連結了React和Redux，例如它讓原本React中的Component元件，可以讀取Redux Store的資料，因此這邊介紹了最基本的功能，如下所示：
 
 **Provider**
-Provider主要是讓所有有經過connect方法與 Redux Store 連結的元件可以取得儲存在 store 的資料，其形式大致如下:
+Provider主要是讓所有C omponent 與 可以取得儲存在 store 的資料，其形式大致如下:
 ``` javascript
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import HomePage from './src/homePage';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import { store } from './app/store'
+import { Provider } from 'react-redux'
+import * as serviceWorker from './serviceWorker'
+import App from './App'
 
-const store = createStore();
-
-export default class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <HomePage />
-      </Provider>
-    );
-  }
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
 ```
 **程式碼說明**
 
-第2行程式碼，從react-redux中引入Provider。
-第3行程式碼，從redux中引入createStore。
-第6行程式碼，透過createStore方法，建立Store儲存空間。
-第11-13行程式碼，透過Provider將store綁定給頁面，讓HomePage元件便能夠存取store中的資料。
+第4行程式碼，import在`'./app/store'`中定義好的store。
+第5行程式碼，從react-redux中引入Provider。
+第11-13行程式碼，透過Provider將store綁定給頁面，讓App元件能夠存取store中的資料。
 
 # Redux 概念
 
-了解Redux的概念後，本小節將要帶讀者了解如何實際應用這些觀念，並依照前面提到的Redux流程依序介紹Component與Container、action與dispatch、Action Creator、Reducer以及Store。
+了解Redux的概念後，本小節將要帶讀者了解如何實際應用這些觀念。
+
+action
