@@ -1,0 +1,40 @@
+# Redux toolkit
+
+## Store
+### configureStore
+A friendly abstraction over the standard Redux `createStore()` function.
+ * @param config The store configuration.
+ * @returns A configured Redux store.
+
+``` javascript
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from '../features/counter/counterSlice';
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+```
+
+**ThunkAction**
+[ThunkAction](https://stackoverflow.com/questions/63881398/how-to-properly-type-a-thunk-with-thunkaction-using-redux-thunk-in-typescript)
+
+**Action**
+如同前面提到的action是一個 [plain object](https://stackoverflow.com/questions/52453407/the-difference-between-object-and-plain-object-in-javascript)，目的是用來改變state的值。
+在頁面上任何會操作到資料的事件、網路請求等等都需要透過action來觸發。
+除此之壞，每個action都必須有一個type欄位，用來表示目前正在執行的動作類型。而其他在action中的欄位則可以隨著不同的需求自行設定。
+
+常見的action格式，如下所示：
+
+``` javascript
+{
+  type: 'TYPE_NAME',
+  payload: data
+}
+```
+
+
+## Reducer
+createAsyncThunk, createSlice, PayloadAction
+
